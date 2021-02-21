@@ -1,0 +1,12 @@
+{
+  "name": "mountain",
+  "displayName": "mountain",
+  "expo": {
+    "name": "mountain",
+    "slug": "mountain",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
