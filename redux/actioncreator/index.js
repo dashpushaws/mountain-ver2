@@ -16,13 +16,6 @@ export const remove = payload => ({
   payload: payload 
 })
 
-
-export const checkState = payload => ({
-  type: 'like/CHECK',
-  payload: payload 
-
-})
-
 export const climb = payload => ({
   type: 'flag/FLAGED',
   payload: payload 

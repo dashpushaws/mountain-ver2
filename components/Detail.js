@@ -1,13 +1,13 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Card, Icon } from 'react-native-elements';
-import { mtData } from '../shared/mountainList'
+import { Card, Icon, Button } from 'react-native-elements';
+import { mtnList } from '../shared/mtnList'
 
 import { add, remove, climb, unclimb } from '../redux/actioncreator'
 import { useDispatch, useSelector } from 'react-redux'
 
 const Detail = ({ navigation, route }) => {
-  const list = mtData;
+  const list = mtnList;
   const { id } = route.params;
   const dispatch = useDispatch();
 
@@ -19,7 +19,6 @@ const Detail = ({ navigation, route }) => {
   const flag = useSelector(state => state.flag);
   const isClimbed = flag.filter(item => item.id == id).length > 0 ? true : false;
 
-  console.log('렌더링 난수', Math.random())
   return (
     <View>
       <Card>
@@ -61,7 +60,6 @@ const Detail = ({ navigation, route }) => {
             type='material'
             color='#FF3333'
             onPress={() => {
-              console.log('add----->')
               dispatch(add(item))
               }}
           />
@@ -88,6 +86,13 @@ const Detail = ({ navigation, route }) => {
            }}
           />
         }
+        <Button
+          title="Class화면으로 돌아가기"
+          type="outline"
+          onPress={() => {
+            navigation.navigate('Class')
+          }}
+        />
       </Card>
     </View>
     )

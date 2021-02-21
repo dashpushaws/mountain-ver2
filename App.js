@@ -12,9 +12,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Icon } from 'react-native-elements'
 
 import Home from './components/Home'
-import Classify from './components/Classify'
-import DomesticList from './components/DomesticList'
-import ForeignList from './components/ForeignList'
+import Class from './components/Class'
+import DomesticMtn from './components/DomesticMtn'
+import ForeignMtn from './components/ForeignMtn'
 import Detail from './components/Detail'
 import Like from './components/Like'
 
@@ -39,9 +39,9 @@ const HomeStackScreen = () => {
 const ListStackScreen = () => {
   return (
     <ListStack.Navigator>
-      <ListStack.Screen name="Classify" component={Classify} options={{title:"Classify", headerTitleAlign:"center"}}  />
-      <ListStack.Screen name="DomesticList" component={DomesticList} options={{title:"DomesticList", headerTitleAlign:"center"}} />
-      <ListStack.Screen name="ForeignList" component={ForeignList} options={{title:"ForeignList", headerTitleAlign:"center"}} />
+      <ListStack.Screen name="Class" component={Class} options={{title:"Class", headerTitleAlign:"center"}}  />
+      <ListStack.Screen name="DomesticMtn" component={DomesticMtn} options={{title:"DomesticMtn", headerTitleAlign:"center"}} />
+      <ListStack.Screen name="ForeignMtn" component={ForeignMtn} options={{title:"ForeignMtn", headerTitleAlign:"center"}} />
       <ListStack.Screen name="Detail" component={Detail} options={{title:"Detail", headerTitleAlign:"center"}}  />
     </ListStack.Navigator>
   )

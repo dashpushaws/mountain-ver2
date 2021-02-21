@@ -1,7 +1,7 @@
-export const mtData = [
+export const mtnList = [
   {
     id: 1,
-    title: 'Seoraksan(설악산)',
+    title: 'Seoraksan',
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Korea_Seoraksan.jpg/1200px-Korea_Seoraksan.jpg",
     height: '1708m',
     location:'강원도'
@@ -25,7 +25,7 @@ export const mtData = [
     title: 'Jirisan',
     image: "http://www.polinews.co.kr/data/photos/20181146/art_15424344936594_d051b1.jpg",
     height: '1915m',
-    location:'경상도+전라도'
+    location:'경상도,전라도'
   },
   {
     id: 5,
@@ -37,14 +37,14 @@ export const mtData = [
   // ========================== 외국산 ==========================
   {
     id: 6,
-    title: 'Everest',
+    title: 'Everestsan',
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Everest_kalapatthar_crop.jpg/300px-Everest_kalapatthar_crop.jpg",
     height: '8,848m',
     location:'네팔'
   },
   {
     id: 7,
-    title: 'Fuji',
+    title: 'Fujisan',
     image: "https://d20aeo683mqd6t.cloudfront.net/articles/title_images/000/038/943/original/pixta_43064884_S.jpg?2019&d=750x400",
     height: '3776m',
     location:'일본'

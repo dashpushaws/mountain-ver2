@@ -11,20 +11,11 @@ const Like = ({ navigation }) => {
   const likes = useSelector(state => state.likes);
   const flag = useSelector(state => state.flag);
 
-  console.log('===============Like==============')
-  console.log('test------>', likes);
-  
-  
-  
-
   return (
     <View style={{flex:1}}>
       <ScrollView contentContainerStyle={{ flexGrow: 1, alignItems: "center", justifyContent: 'center' }}>
       {
-
         likes.map((likeItem, i) => (
-
-
               <ListItem containerStyle={{width:"100%"}} key={i}>
                 <Avatar
                 source={{uri: likeItem.image}} 
@@ -50,31 +41,18 @@ const Like = ({ navigation }) => {
                     />
                 }
 
-                <Icon name='checkmark-outline' type='ionicon' color='#f00' onPress={()=>{dispatch(remove(likeItem))}} />
+                <Icon 
+                name='checkmark-outline' 
+                type='ionicon' 
+                color='#f00' 
+                onPress={()=>{
+                  dispatch(remove(likeItem))
+                  }} 
+                />
               </ListItem>
-            )
-        
-        
+          )
         )
       }
-      {/* {
-        likes.map((item, i) => (
-            <Tile key={i}
-              imageSrc={{uri: item.image}}
-              title={item.title}
-              contentContainerStyle={{ height: 70 }}
-              caption={item.height}
-              featured
-            >
-              <View
-                style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}
-              >
-                <Text>Caption</Text>
-                <Text>Caption</Text>
-              </View>
-            </Tile>
-        ))
-      } */}
       </ScrollView>
     </View>
     )

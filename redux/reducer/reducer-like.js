@@ -34,10 +34,6 @@ const reducer = (state = [], action) => {
       // return temp
       return [...state.filter(item => item.id != action.payload.id)]
     
-    case 'like/CHECK':
-      console.log(state);
-      return state
-
     default:
       return state
   }

@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useSelector } from 'react-redux';
-import { mtData } from '../shared/mountainList'
+import { mtnList } from '../shared/mtnList'
 import { ListItem, Avatar } from 'react-native-elements'
 import { ScrollView } from 'react-native-gesture-handler'
 
-const DomesticList = ({ navigation }) => {
-  const list = mtData.filter(item => item.id < 6);
+const DomesticMtn = ({ navigation }) => {
+  const list = mtnList.filter(item => item.id < 6);
 
   return (
     <View>
@@ -25,6 +25,5 @@ const DomesticList = ({ navigation }) => {
       </ScrollView>
     </View>
   )
-  
 }
-export default DomesticList;
+export default DomesticMtn;

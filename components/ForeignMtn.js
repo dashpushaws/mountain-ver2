@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useSelector, useDispatch  } from 'react-redux';
-import { mtData } from '../shared/mountainList'
+import { mtnList } from '../shared/mtnList'
 import { ListItem, Avatar } from 'react-native-elements'
 import { ScrollView } from 'react-native-gesture-handler'
 
-const ForeignList = ({ navigation }) => {
-  const list = mtData.filter(item => item.id > 5);
+const ForeignMtn = ({ navigation }) => {
+  const list = mtnList.filter(item => item.id > 5);
 
   return (
     <View>
@@ -27,5 +27,5 @@ const ForeignList = ({ navigation }) => {
   )
   
 }
-export default ForeignList;
+export default ForeignMtn;
 

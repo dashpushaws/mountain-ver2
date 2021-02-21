@@ -1,9 +1,9 @@
 import React from 'react';
-import { mtData } from '../shared/mountainList'
+import { mtnList } from '../shared/mtnList'
 import { ListItem } from 'react-native-elements'
 
 const SearchList = ({ navigation, keyword }) => {
-  let list = mtData;
+  let list = mtnList;
 
   if(keyword && keyword.length > 1){
     list = list.filter(item => item.title.toLocaleLowerCase().indexOf(keyword.toLocaleLowerCase()) > -1 )
