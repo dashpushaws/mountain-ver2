@@ -23,14 +23,14 @@ export const mtnList = [
   {
     id: 4,
     title: 'Jirisan',
-    image: "http://www.polinews.co.kr/data/photos/20181146/art_15424344936594_d051b1.jpg",
+    image: "https://mblogthumb-phinf.pstatic.net/MjAxODAxMDZfMTE3/MDAxNTE1MjIyNjM1MDA1.mklsCBhQjcI6htMeswv1n-we-eBNDlBIu0sXFvAVyjwg.KAjilE6X2R5eGOR7FApeuaP23cVFQn9od8ayJf0ZVHUg.JPEG.kso8888/14011_%EC%9E%A5%EB%A0%A4%EC%83%81_%EC%A7%80%EB%A6%AC%EC%82%B0_%EC%82%B0%EA%B7%B8%EB%A6%AC%EB%A9%94_%EA%B3%A0%EA%B0%91%EC%A7%84_D.jpg?type=w800",
     height: '1915m',
     location:'경상도,전라도'
   },
   {
     id: 5,
     title: 'Hallasan',
-    image: "http://www.mediajeju.com/news/photo/201912/320379_210682_503.jpg",
+    image: "https://api.cdn.visitjeju.net/photomng/imgpath/201911/29/48bdb99e-20ba-4fb6-82f2-6ea79ceefb0d.jpg",
     height: '1947m',
     location:'제주도'
   },
