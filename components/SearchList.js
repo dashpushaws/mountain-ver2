@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { mtnList } from '../shared/mtnList'
 import { ListItem } from 'react-native-elements'
-
+import api from '../api/list'
 
 const SearchList = ({ navigation, keyword }) => {
   let list = mtnList;
-
   // const dispatch = useDispatch();
+  // const [list, setList] = useState([]);
 
+  
+  
   if(keyword && keyword.length > 1){
     list = list.filter(item => item.title.toLocaleLowerCase().indexOf(keyword.toLocaleLowerCase()) > -1 )
 
